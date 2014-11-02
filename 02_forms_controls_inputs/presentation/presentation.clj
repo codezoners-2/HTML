@@ -128,7 +128,9 @@
 
                    (image-h 360 "URL-tagging-image.png")
 
-                   [:p "Using forms to modify the URL."]]
+                   [:p "Using forms to modify the URL."]
+
+                   [:p "See the " [:a {:href "https://github.com/codezoners-2/HTML/tree/master/02_forms_controls_inputs/assignments/basic-params"} "README"] "."]]
 
                   [:section
                    [:ul
@@ -150,7 +152,9 @@
                  [:section
                   [:section
                    [:h3 "Exercise 2"]
-                   [:h4 "Posted Parameters"]]
+                   [:h4 "Posted Parameters"]
+
+                   [:p "(" [:a {:href "https://github.com/codezoners-2/HTML/tree/master/02_forms_controls_inputs/assignments/posted-params"} "README"] ".)"]]
 
                   [:section
                    [:h4 "Blank Report"]
@@ -165,4 +169,18 @@
                   [:section
                    [:h4 "Submitted Form"]
 
-                   (image-h 360 "submitted-form.png")]]])
+                   (image-h 360 "submitted-form.png")]]
+
+                 [:section
+                  [:section
+                   [:h3 "Exercise 3"]
+                   [:h4 "Flags of the World!"]
+
+                   (image-h 360 "flag-result.png")
+
+                   [:p "(" [:a {:href "https://github.com/codezoners-2/HTML/tree/master/02_forms_controls_inputs/assignments/flags"} "README"] ".)"]]
+
+                  [:section
+                   [:h4 "Form Screen Shot"]
+
+                   (image-h 360 "create-a-flag.png")]]])
