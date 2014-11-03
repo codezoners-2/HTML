@@ -6,7 +6,7 @@ Many countries of the world have flags comprising three coloured bars, either ve
 
 - Radio buttons for selecting vertical or horizontal orientation (post to a parameter called `orientation`, with value `h` or `v`)
 
-- Text entry fields for entering colours in hex format (e.g. `FF0000` for red, `0000FF` for green) - post to parameters called `colour1`, `colour2` and `colour3`
+- Text entry fields for entering colours in hex format (e.g. `#FF0000` for red, `#0000FF` for green) - post to parameters called `colour1`, `colour2` and `colour3`
 
 - A text entry field for the name of the country (post to a parameter called `countryname`)
 

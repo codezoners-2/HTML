@@ -183,4 +183,40 @@
                   [:section
                    [:h4 "Form Screen Shot"]
 
-                   (image-h 360 "create-a-flag.png")]]])
+                   (image-h 360 "create-a-flag.jpg")]]
+
+                 [:section
+                  [:section
+                   [:h3 "More Input Types"]
+                   [:h4 "(HTML5)"]]
+
+                  [:section
+                   [:h4 "Colour"]
+                   (code "<INPUT TYPE=\"COLOR\" NAME=\"MyColour\">")
+                   (image "input-color.jpg")]
+
+                  [:section
+                   [:h4 "Hidden Form Inputs"]
+                   (code "<INPUT TYPE=\"HIDDEN\" NAME=\"MyParam\" VALUE=\"True\">")]
+
+                  [:section
+                   [:h3 "Validation, Place-holders"]
+                   [:h4 "(HTML5)"]
+
+                   (code "<INPUT TYPE=\"TEXT\" NAME=\"countryname\" REQUIRED PLACEHOLDER=\"Country\">")
+                   (image-h 300 "place-holder.jpg")]]
+
+                 [:section
+                  [:section
+                   [:h3 "Exercise 4"]
+                   [:h4 "Smarter Flags"]
+                   [:p "(" [:a {:href "https://github.com/codezoners-2/HTML/tree/master/02_forms_controls_inputs/assignments/flags-2"} "README"] ".)"]]
+
+                  [:section
+                   [:p "Create a flag form with colour inputs, validation and a place-holder."]
+                   (image "flag-validation-etc.jpg")]
+
+                  [:section
+                   [:p "Create a page with (only!) a button for each flag."]
+                   [:p "(use " [:code "HIDDEN"] " input types.)"]
+                   (image "flags-hidden.jpg")]]])
