@@ -219,4 +219,33 @@
                   [:section
                    [:p "Create a page with (only!) a button for each flag."]
                    [:p "(use " [:code "HIDDEN"] " input types.)"]
-                   (image "flags-hidden.jpg")]]])
+                   (image "flags-hidden.jpg")]]
+
+                 [:section
+                  [:section
+                   [:h3 "Embedded Content with Iframes"]
+                   (image "visit-us.png")]
+
+                  [:section
+                   [:h4 "Embed with an " [:code "IFRAME"] " tag"]
+                   (include-code "iframe.html")
+                   [:p "Note the encoded arguments, and the " [:code "output=embed"]
+                    " to force embedding in Maps."]]]
+
+                 [:section
+                  [:section
+                   [:h3 "Exercise 5"]
+                   [:h4 "A Home Page"]
+                   [:p "(" [:a {:href "https://github.com/codezoners-2/HTML/tree/master/02_forms_controls_inputs/assignments/iframes"} "README"] ".)"]
+                   ]
+
+                  [:section
+                   [:p "Create a home page with a form for searching (with Bing!)
+                        and for a map search with Google Maps"]
+                   (image "sleazy-home.png")]
+
+
+                  [:section
+                   [:p "The resulting page (already provided) will place the
+                        fetched page into an " [:code "IFRAME"] "."]
+                   (image "sleazy-results.png")]]])
