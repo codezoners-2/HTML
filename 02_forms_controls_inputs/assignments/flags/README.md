@@ -10,6 +10,6 @@ Many countries of the world have flags comprising three coloured bars, either ve
 
 - A text entry field for the name of the country (post to a parameter called `countryname`)
 
-The URL details for the form are [here](http://bakirkoy.cassiel.com:5000/describe-flags/).
+The URL details for the form are [here](http://bakirkoy.cassiel.com:8080/describe-flags/).
 
 If you get results which are wrong or confusing, you can always do a "View Source" on the output page to see if your parameters are getting through properly.

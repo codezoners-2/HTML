@@ -8,13 +8,13 @@ There's no difference in the form itself between `GET` and `POST`, apart from th
 
 For this assignment, we've provided a server which responds to a `POST` request. If you browse to
 
-        http://bakirkoy.cassiel.com:5000/blank-form/
+        http://bakirkoy.cassiel.com:8080/blank-form/
         
 You'll see an empty "report card." The assignment is to create a form which will populate this card. (See the presentation for an example of a form, and the populated page.)
 
 To post to the page, use the URL
 
-        http://bakirkoy.cassiel.com:5000/submit/
+        http://bakirkoy.cassiel.com:8080/submit/
 
 This URL will only accept a `POST` method from a form.
 
