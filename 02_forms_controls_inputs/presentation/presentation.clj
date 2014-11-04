@@ -191,12 +191,12 @@
                    [:h4 "(HTML5)"]]
 
                   [:section
-                   [:h4 "Colour"]
+                   [:h3 "Colour"]
                    (code "<INPUT TYPE=\"COLOR\" NAME=\"MyColour\">")
                    (image "input-color.jpg")]
 
                   [:section
-                   [:h4 "Hidden Form Inputs"]
+                   [:h3 "Hidden Form Inputs"]
                    (code "<INPUT TYPE=\"HIDDEN\" NAME=\"MyParam\" VALUE=\"True\">")]
 
                   [:section
