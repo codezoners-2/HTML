@@ -1,0 +1,9 @@
+<DIV>
+    {% if num_items == 0 %}
+       <P>Empty Basket.
+    {% elif num_items == 1 %}
+       <P>You have just one item in your basket.
+    {% else %}
+       <P>You have {{ num_items }} items in your basket.
+    {% endif %}
+</DIV>

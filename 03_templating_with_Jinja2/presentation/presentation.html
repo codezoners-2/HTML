@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+
+                <!-- THEME now expected in head.html.
+                     <link rel="stylesheet" href="css/theme/default.css" id="theme">
+                  -->
+
+                <!-- Meta-content (title, meta, style). -->
+                <title>Templating with Jinja2</title><meta content="Templating with Jinja2" name="description" /><meta content="Nick Rothwell" name="author" /><link href="css/theme/sky.css" rel="stylesheet" type="text/css" />
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+                <!-- Pull in main content. -->
+                <div class="reveal"><div class="slides"><section><section><h3>Templating with Jinja2</h3><h4>Nick Rothwell</h4></section></section><section><section><h3>Dynamic Content</h3><h4>Server-Generated</h4><img height="480" src="images/amazon.jpg" style="margin:10px; vertical-align:middle" /></section><section><h4>Flags</h4><img height="480" src="images/flag-result.png" style="margin:10px; vertical-align:middle" /></section></section><section><section><h3>Workflow</h3><ul><li class="fragment">HTML Form...</li><li class="fragment">(... routing code ...)</li><li class="fragment">... Template</li></ul></section><section><h3>Templates</h3><h4>PHP</h4><pre><code class="html">&lt;html&gt;
+    &lt;body&gt;
+        Names of my friends:
+        &lt;ul&gt;
+        &lt;?php foreach ($this-&gt;friends as $friend): ?&gt;
+            &lt;li&gt;&lt;?=$friend?&gt;&lt;/li&gt;
+        &lt;?php endforeach; ?&gt;
+        &lt;/ul&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre></section><section><h3>Templates</h3><h4>JSP + JSTL (Java)</h4><pre><code class="html">&lt;%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Count to 10 Example (using JSTL)&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;c:forEach var="i" begin="1" end="10" step="1"&gt;
+      &lt;c:out value="${i}" /&gt;
+
+      &lt;br /&gt;
+    &lt;/c:forEach&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></section><section><h3>Templates</h3><h4>Jinja2 (Python)</h4><pre><code class="html">&lt;!doctype html&gt;
+&lt;title&gt;Hello from Flask&lt;/title&gt;
+{% if name %}
+  &lt;h1&gt;Hello {{ name }}!&lt;/h1&gt;
+{% else %}
+  &lt;h1&gt;Hello World!&lt;/h1&gt;
+{% endif %}</code></pre></section><section><p>The browser doesn't see the template - it just sees HTML.</p><p>(e.g. flags.)</p></section><section><h3>Jinja2: Example</h3><p>In the form:</p><pre><code class="html">&lt;INPUT TYPE="TEXT" NAME="user"&gt;</code></pre><p>In the template:</p><pre><code class="html">&lt;P&gt;Welcome back, {{ request.form.user }}.</code></pre><p>(<code>request.form</code> is provided by the server.)</p></section></section><section><section><h3>Exercise 1</h3><h4>Form and Template</h4><p>Write a form with a text field, and a template which prints the value of the field.</p><div><img height="300" src="images/form.png" style="margin:10px; vertical-align:middle" /><img height="300" src="images/form-done.png" style="margin:10px; vertical-align:middle" /></div><p>See the <a href="https://github.com/codezoners-2/HTML/tree/master/03_templating_with_Jinja2/assignments/basics">README</a>.</p><p>However...</p></section></section><section><section><h3>Uploading Templates</h3><ul><li>You can upload HTML templates to <code>http://bakirkoy.cassiel.com:8080/upload</code></li><li>For any file you upload with name <code>myfile.html</code> will be available at <code>http://bakirkoy.cassiel.com:8080/pages/myfile</code></li><li>These pages are available via <code>GET</code> (from the browser), or <code>PUT</code> (as a form action)</li></ul></section><section><h4>so... to start:</h4><ul><li>Create a simple HTML page</li><li>Upload it</li><li>Make sure that you can see it in the browser</li><li>And - <strong>please</strong> - use your name as a prefix for your files since everyone's files are stored in the same place</li></ul></section></section><section><section><h3>More Jinja!</h3></section><section><h4>Conditional Expressions</h4><pre><code class="html">{{ request.form.user if request.form.user else 'Anonymous' }}</code></pre><p>Try this, to print "Anonymous" if the user doesn't type in a name.</p></section><section><h4>Arithmetic</h4><pre><code class="html">{{ 10 * 10 }}</code></pre><p>(And other operators...)</p></section><section><h4>Comparison</h4><pre><code class="html">{{ 'empty basket' if num_items == 0 else ...  }}</code></pre></section></section><section><section><h3>Statement Blocks</h3><pre><code class="html">&lt;DIV&gt;
+    {% if num_items == 0 %}
+       &lt;P&gt;Empty Basket.
+    {% elif num_items == 1 %}
+       &lt;P&gt;You have just one item in your basket.
+    {% else %}
+       &lt;P&gt;You have {{ num_items }} items in your basket.
+    {% endif %}
+&lt;/DIV&gt;</code></pre></section></section><section><section><h3>Exercise 2</h3><h4>A 'Pretend' Login Screen</h4><div><img height="300" src="images/login-ok.png" style="margin:10px; vertical-align:middle" /><img height="300" src="images/login-fail.png" style="margin:10px; vertical-align:middle" /></div></section><section><h4>Low-Security Login</h4><ul><li>Implement a login screen which accepts any user with password <code>pass</code></li><li>Display a welcome page if the user logs in successfully</li><li>Display a "failed" page if the password is not correct</li></ul><p>See the <a href="https://github.com/codezoners-2/HTML/tree/master/03_templating_with_Jinja2/assignments/login">README</a>.</p></section></section><section><section><h3>A Superhero Login System</h3><div><img height="300" src="images/logan.png" style="margin:10px; vertical-align:middle" /><img height="300" src="images/wolverine.png" style="margin:10px; vertical-align:middle" /></div></section><section><h4>A Superhero Login System</h4><ul><li>Modify the previous exercise to recognise various superheroes by their everyday names</li><li>Display a welcome page as before for "normal" users</li><li>For superheroes, display their codename instead. You can write it in red like this:<pre><code class="html">Welcome, &lt;SPAN STYLE="color: red"&gt;Wolverine&lt;/SPAN&gt;.</code></pre></li></ul><p>See the <a href="https://github.com/codezoners-2/HTML/tree/master/03_templating_with_Jinja2/assignments/superhero">README</a>.</p></section></section></div></div>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
