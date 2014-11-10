@@ -4,7 +4,7 @@
 
 You now know enough to
 
-- upload a page to the server and access it via a URL (`http://bakirkoy.cassiel.com:8080/pages/[...]`)
+- upload a page to the server and access it via a URL (`http://bakirkoy.cassiel.com:8080/page/[...]`)
 - create a form with a text field named (for example) `user`
 - (the new bit:) use a fragment of Jinja2 code to expand `request.form.user` in the middle of an HTML template
 

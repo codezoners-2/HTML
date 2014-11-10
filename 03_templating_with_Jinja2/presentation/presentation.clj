@@ -93,9 +93,9 @@
                    [:ul
                     [:li "You can upload HTML templates to " [:code "http://bakirkoy.cassiel.com:8080/upload"]]
                     [:li "For any file you upload with name " [:code "myfile.html"] " will be"
-                     " available at " [:code "http://bakirkoy.cassiel.com:8080/pages/myfile"]]
+                     " available at " [:code "http://bakirkoy.cassiel.com:8080/page/myfile"]]
                     [:li "These pages are available via " [:code "GET"] " (from the browser),"
-                     " or " [:code "PUT"] " (as a form action)"]]]
+                     " or " [:code "POST"] " (as a form action)"]]]
 
                   [:section
                    (subheading "so... to start:")
