@@ -166,7 +166,8 @@
 
                  [:section
                   [:section
-                   (heading "A Superhero Login System")
+                   (heading "Exercise 3")
+                   (subheading "A Superhero Login System")
 
                    [:div
                     (image-h 300 "logan.png")
@@ -174,7 +175,7 @@
 
                    ]
                   [:section
-                   (subheading "A Superhero Login System")
+                   (subheading "Superhero Login")
 
                    [:ul
                     [:li "Modify the previous exercise to recognise various superheroes"
