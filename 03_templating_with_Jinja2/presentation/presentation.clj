@@ -188,8 +188,52 @@
                      ]
                     ]
 
-                   [:p "See the " [:a {:href "https://github.com/codezoners-2/HTML/tree/master/03_templating_with_Jinja2/assignments/superhero"} "README"] "."]]]
+                   [:p "See the " [:a {:href "https://github.com/codezoners-2/HTML/tree/master/03_templating_with_Jinja2/assignments/superhero"} "README"] "."]]
+
+                  [:section
+                   (subheading "Age Limits")
+
+                   [:ul
+                    [:li "Implement an age limit"]
+                    [:li "Add a form field for users to input their age"]
+                    [:li "Reject the login if they are under 18"]
+                    [:li "(Should young superheroes be allowed in? I think so!)"]]]
                   ]
+
+                 [:section
+                  [:section
+                   (heading "Exercise 4")
+                   (subheading "Flags")
+
+                   [:div
+                    (image-h 300 "flag-germany.jpg")
+                    (image-h 300 "flag-ireland.jpg")]]
+
+                  [:section
+                   (subheading "Create the Flag Template")
+
+                   [:p "You've already created the form which posts parameters to a flag template."
+                    " This exercise is to create the template!"]
+
+                   [:p [:strong "Hints:"]]
+
+                   [:ul
+                    [:li "Use your browser to fetch and save a couple of flags, one vertical and one horizontal"]
+                    [:li "Use these two files as the starting point for your template"]
+                    [:li "Think carefully about how the parameters work (" [:code "countryname"] ", "
+                     [:code "orientation"] " and so on)"]
+                    [:li "Work incrementally!"]]]
+
+                  [:section
+                   (heading "Bonus Exercise")
+                   (subheading "Simpler Flags")
+
+                   [:ul
+                    [:li "Some countries (Indonesia, Monaco, ...) have only two stripes"]
+                    [:li "Can you modify your template to support these as well?"]
+                    [:li "(Think about how the parameters might indicate 2 rather than 3 stripes)"]]
+
+                   [:p "(For the ambitious: try Mauritius!)"]]]]
 
 
 
