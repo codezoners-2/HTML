@@ -1,9 +1,10 @@
 body {
 		 font-family: arial;
-		 background-color: rgb(50,0,50);}
+		 background-color: rgb(50,0,50);
+		 margin-left: 0px;}
 h1 {
 		 color: rgb(255,0,0);
-		 margin-left: 0px;}
+		 }
 		 
 h2 {
 		 color: red;}
