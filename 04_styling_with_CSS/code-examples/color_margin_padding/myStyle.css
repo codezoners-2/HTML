@@ -1,0 +1,15 @@
+body {
+		 background-color: rgb(255,255,255);}
+h1 {
+		 color: rgb(255,0,0);}
+		 
+h2 {
+		 color: rgb(0,200,0);}
+
+p {
+		 color: rgb(0,0,0);}
+		 
+div.section {
+		 background-color: rgb(230,230,230); 
+		 padding: 10px;
+		 margin: 10px;}

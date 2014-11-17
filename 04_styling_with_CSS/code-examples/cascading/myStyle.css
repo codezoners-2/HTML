@@ -1,0 +1,31 @@
+body {
+		 font-family: arial;
+		 background-color: rgb(50,0,50);}
+h1 {
+		 color: rgb(255,0,0);}
+		 
+h2 {
+		 color: rgb(255,0,0);}
+
+/* ==== demo of !mportant rule ====*/
+/*
+p {
+		 color: rgb(255,0,255) !important;}
+*/
+
+
+p {
+		 color: rgb(255,255,255);}
+
+
+/* ==== demo of last rule ==== */
+/*
+p {
+		 color: rgb(255,0,255);}
+*/
+
+/* ==== demo of specificity rule ==== */
+/*
+p#intro {
+		 color: rgb(255,0,255);}
+*/

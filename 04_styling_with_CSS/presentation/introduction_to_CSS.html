@@ -1,0 +1,358 @@
+<!doctype html>
+<!--ALL MATERIAL COPYRIGHT THEODOROS PAPATHEODOROU contact@artech.cc-->
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>introduction to CSS</title>
+
+		<meta name="description" content="class notes">
+		<meta name="author" content="Theodoros Papatheodorou">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>introduction to</h2>
+					<img height="500" src="assets/css3.png">
+					<p style="text-align:left; font-size: 50%;">&copy; Theodoros Papatheodorou
+					</p>
+				</section>
+
+				<section>
+					<h2>understanding CSS</h2>
+					<p>imagine that there is an invisible box around every HTML element.</p>
+					<a href="assets/pageStructure.png"><img height="400" src="assets/pageStructure.png"></a>
+					<p>CSS allows you affect how each individual box and its contents is presented</p>
+				</section>
+
+				<section>
+					<h2>simple CSS syntax</h2>
+					<pre><code data-trim contenteditable>
+p { 
+    font-family: Arial;
+    color: red;
+  }
+					</code></pre>
+					<ul>
+						<li>selector: indicates which element to change</li>
+						<li>declarations: indicate how to change the selector</li>
+						<li>declarations are made up of properties and values</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>CSS: internal vs. external</h2>
+					<p>use <strong>external</strong>: when your site has more than one page</p>
+					<ul>
+						<li>avoid repeating yourself</li>
+						<li>keep the content separate from how the page looks</li>
+						<li>you can change the styles used across all pages
+						by altering just one file</li>
+					</ul>
+					<div class="codeRefCont">
+					<p class="codeRefText">internalCSS / externalCSS</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+
+
+				<section>
+					<h2>extra markup #1</h2>
+					<ul>
+						<li>DIV: to group block elements together</li>
+						<li>SPAN: to group inline elements together</li>
+					</ul>
+					<div class="codeRefCont">
+					<p class="codeRefText">extraMarkup</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+
+				<section>
+					<h2>extra markup #2</h2>
+					<ul>
+						<li>ID: to <strong>uniquely</strong> identify an element</li>
+						<li>CLASS: to identify several elements as being different from other elements</li>
+					</ul>
+					<div class="codeRefCont">
+					<p class="codeRefText">extraMarkup</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+				
+
+				<section>
+					<h2>CSS selectors</h2>
+					<a href="assets/css_selectors.png"><img height="600" src="assets/css_selectors.png"></a>
+				</section>
+
+				<section>
+					<h2>CSS rule cascading</h2>
+					<ul>
+						<li>last rule takes precedence</li>
+						<li>more specific rule takes precedence</li>
+						<li>rule marked as <strong>!important</strong> takes precedence</li>
+					</ul>
+					<div class="codeRefCont">
+					<p class="codeRefText">cascading</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+
+				<section>
+					<h2>CSS rule inheritance</h2>
+					<div class="codeRefCont">
+					<p class="codeRefText">inheritance</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+				
+
+				<section>
+					<h2>CSS color</h2>
+					<ul>
+						<li><strong>color</strong>: rgb(255,255,255);</li>
+						<li><strong>background-color</strong>: rgb(255,255,255);</li>
+						<li><strong>opacity</strong>: 0.5;</li>
+					</ul>					
+					<div class="codeRefCont">
+					<p class="codeRefText">color_margin_padding</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+
+				<section>
+					<h2>pH scale exercise</h2>
+					<img width="700" src="assets/pHscale.png"></a>
+				</section>				
+
+
+				<section>
+					<h2>boxes</h2>
+					<ul>
+						<li><strong>width: </strong>: 100px / 50% ;</li>
+						<li><strong>min-width: </strong>: 100px / 50% ;</li>
+						<li><strong>max-width: </strong>: 100px / 50% ;</li>
+						<li><strong>min-height: </strong>: 100px / 50% ;</li>
+						<li><strong>max-height: </strong>: 100px / 50% ;</li>
+					</ul>					
+				</section>
+
+				<section>
+					<h2>border / margin / padding</h2>
+					<a href="assets/padding_margin_border.png"><img height="400" src="assets/padding_margin_border.png"></a>
+				</section>
+
+
+				<section>
+					<h2>CSS padding</h2>
+					<ul>
+						<li><strong>padding</strong>: 10px;</li>
+						<li><strong>padding-top</strong>: 10px;</li>
+						<li><strong>padding-bottom</strong>: 10px;</li>
+						<li><strong>padding-left</strong>: 10px;</li>
+						<li><strong>padding-right</strong>: 10px;</li>
+					</ul>					
+					<div class="codeRefCont">
+					<p class="codeRefText">color_margin_padding</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+
+
+				<section>
+					<h2>CSS margins</h2>
+					<ul>
+						<li><strong>margins</strong>: 10px;</li>
+						<li><strong>margin-top</strong>: 10px;</li>
+						<li><strong>margin-bottom</strong>: 10px;</li>
+						<li><strong>margin-left</strong>: 10px;</li>
+						<li><strong>margin-right</strong>: 10px;</li>
+					</ul>					
+					<div class="codeRefCont">
+					<p class="codeRefText">color_margin_padding</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+
+				<section>
+					<h2>CSS margins</h2>
+					<p>using the <strong>auto</strong> property to center elements</p>
+				</section>
+				
+
+				<section>
+					<h2>CSS border width & radius</h2>
+					<ul>
+						<li><strong>border-width</strong>: 10px / thin / medium / thick ;</li>
+						<li><strong>border-top-width</strong>: 10px / thin / medium / thick ;</li>
+						<li><strong>border-bottom-width</strong>: 10px / thin / medium / thick ;</li>
+						<li><strong>border-left-width</strong>: 10px / thin / medium / thick ;</li>
+						<li><strong>border-right-width</strong>: 10px / thin / medium / thick ;</li>
+						<li><strong>border-radius</strong>: 10px ;</li>
+					</ul>					
+				</section>
+
+				<section>
+					<h2>CSS border styling</h2>
+					<ul>
+						<li><strong>border-style</strong>: solid / dotted / dashed / ... ;</li>
+					</ul>					
+				</section>
+
+				<section>
+					<h2>CSS border</h2>
+					<ul>
+						<li><strong>border-color</strong>: rgb(255,255,255) ;</li>
+						<li><strong>border-top-color</strong>: rgb(255,255,255) ;</li>
+						<li><strong>border-bottom-color</strong>: rgb(255,255,255) ;</li>
+						<li><strong>border-left-color</strong>: rgb(255,255,255) ;</li>
+						<li><strong>border-right-color</strong>: rgb(255,255,255) ;</li>
+					</ul>					
+				</section>
+
+
+
+				<section>
+					<h2>pH scale exercise & boxes</h2>
+					<img width="700" src="assets/pH_scale_boxes.png"></a>
+				</section>				
+				
+				
+				<section>
+					<h2>text styling</h2>
+					<ul>
+						<li><strong>font-family</strong>: courier, arial, times;</li>
+					</ul>					
+					<div class="codeRefCont">
+					<p class="codeRefText">text_styling</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+				
+				<section>
+					<h2>more fonts using</h2>
+					<img width="700" src="assets/google-web-fonts-logo.png"></a>
+				</section>				
+				
+				<section>
+					<h2>text styling</h2>
+					<ul>
+						<li><strong>font-size</strong>: 16px; / 100%;</li>
+					</ul> <br/>			
+					<a href="assets/pixels_perc_ems.png"><img height="300" src="assets/pixels_perc_ems.png"></a>
+					<div class="codeRefCont">
+					<p class="codeRefText">text_styling</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+				
+				<section>
+					<h2>text styling</h2>
+					<ul>
+						<li><strong>font-weight</strong>: normal / bold;</li>
+						<li><strong>font-style</strong>: normal / italic;</li>						
+						<li><strong>text-transform</strong>: lowercase / uppercase / capitalize;</li>
+						<li><strong>text-decoration</strong>: underline / line-through / blink;</li>
+					</ul>					
+					<div class="codeRefCont">
+					<p class="codeRefText">text_styling</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+				
+				<section>
+					<h2>text alignment</h2>
+					<ul>
+						<li><strong>text-align</strong>: left / right / center / justify;</li>
+					</ul>					
+					<div class="codeRefCont">
+					<p class="codeRefText">text_styling</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+				
+				<section>
+					<h2>link styling</h2>
+					<pre><code data-trim contenteditable>
+a:link {
+	 color: deeppink;
+	 text-decoration: none;}
+a:visited {
+	 color: black;}
+a:hover {
+	 color: deeppink;
+	 text-decoration: underline;}
+a:active {
+	 color: darkcyan; }
+					</code></pre>
+					</section>			
+
+				<section>
+					<h2>textFun exercise</h2>
+					<img width="700" src="assets/textFun.png"></a>
+				</section>				
+								
+								
+				<section>IS THERE TIME? BRINGING IT ALL TOGETHER with tour of silicon valley reloaded</section>
+			</div>
+		</div>
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/head.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/js/reveal.min.js");></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				width: 1100,
+				height: 850,
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
