@@ -15,8 +15,9 @@ p {
 		
 .bioInfo 
 {
-		background-color: brown;
-		border: 5px dashed pink;
+		background-color: white;
+		color: black;
+		border: 5px solid pink;
 } 
 
 #copyright
