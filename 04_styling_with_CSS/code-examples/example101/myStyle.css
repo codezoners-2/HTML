@@ -2,7 +2,8 @@ body {
 		 font-family: arial;
 		 background-color: rgb(50,0,50);}
 h1 {
-		 color: rgb(255,0,0);}
+		 color: rgb(255,0,0);
+		 margin: 0px;}
 		 
 h2 {
 		 color: red;}
