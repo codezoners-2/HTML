@@ -5,7 +5,6 @@ body {
 		 margin: auto;}
 h1 {
 		 color: rgb(255,0,0);
-		 margin:auto;
 		 }
 		 
 h2 {
@@ -17,6 +16,7 @@ p {
 .bioInfo 
 {
 		background-color: brown;
+		border: 10px;
 } 
 
 #copyright
