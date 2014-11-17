@@ -13,10 +13,10 @@ h2 {
 		 color: rgb(255,0,0); }
 
 /* ==== padding NOT inherited (you have to respecify) === */
-/*
+
 #intro {
 		 padding: 20px; }
-*/
+
 
 /* ==== padding NOT inherited (or use inherit) === */
 /*
