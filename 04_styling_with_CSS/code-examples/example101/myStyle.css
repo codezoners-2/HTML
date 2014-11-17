@@ -7,7 +7,9 @@ h1 {
 h2 {
 		 color: rgb(255,0,0);}
 
-.bioInfo {
+.bioInfo { background-color: rgb(0,0,200);}
+
+p.bioInfo {
 		  background-color: rgb(100,100,100); }
 
 p {
