@@ -1,6 +1,7 @@
 body {
 		 font-family: arial;
-		 background-color: rgb(50,0,50);}
+		 background-color: rgb(50,0,50);
+		 margin-left: auto;}
 h1 {
 		 color: rgb(255,0,0);
 		 }
@@ -9,7 +10,7 @@ h2 {
 		 color: red;}
 p {
 		 color: white;
-		    	    margin-left: auto;}
+		 }
 		
 .bioInfo 
 {
