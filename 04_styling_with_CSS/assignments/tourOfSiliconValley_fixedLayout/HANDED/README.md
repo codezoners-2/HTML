@@ -10,7 +10,7 @@
 7. Give the level 2 header a background color of 40,40,180 add padding of 5px, use Times font as well as the same border characteristics as level 1 headings.
 8. Make the bullet of the unordered list a square.
 9. Create a class "address" for all address paragraphs, setting the font to courier and to italic.
-10. Enclose each destination idea in a div of class "highlight". Set the font color to black, background color to 130, 110, 230, give it a bottom margin of 20px, a bottom-padding of 20px, left padding of 10px and a border radius of 30px. Set the highlight div to float: left. What should the width of each highlight div be? Do the math! You'll need the trick with the "clear" command. Hint: you can use more than one class for elements as long as you separate them by commas.
+10. Enclose each destination idea in a div of class "highlight". Set the font color to black, background color to 130, 110, 230, give it a bottom margin of 20px, and a left margin of 10px, a bottom-padding of 20px, left padding of 10px and a border radius of 30px. Set the highlight div to float: left. What should the width of each highlight div be? Do the math! You'll need the trick with the "clear" command. Hint: you can use more than one class for elements as long as you separate them by commas.
 11. Give the fonts of level 3 heading a black color and a padding of 10px.
 12. Make the links be white, blue when they have been visited and red when you hover over them.
 
