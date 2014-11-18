@@ -16,4 +16,5 @@ p {
 		 color: rgb(255,255,255);
 		 position: relative;
 		 left: 2%;
-		 background-color: black;}
+		 background-color: black;
+		 width: 100%;}
