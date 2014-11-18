@@ -313,11 +313,183 @@ a:active {
 					<h2>textFun exercise</h2>
 					<img width="700" src="assets/textFun.png"></a>
 				</section>				
-								
-								
-				<section>IS THERE TIME? BRINGING IT ALL TOGETHER with tour of silicon valley reloaded</section>
+					
+		
+					
+				<section>
+					<h1>layouts</h1>
+				</section>
+					
+				<section>
+					<h2>block elements</h2>
+					<h3>what we have seen so far</h3>
+					<a href="assets/blockElements.png">
+						<img width="700" src="assets/blockElements.png"></a>
+				</section>				
+				
+				<section>
+					<h2>more advanced layouts</h2>
+					<h3>containing elements</h3>
+					<a href="assets/containingElements.png">
+						<img width="700" src="assets/containingElements.png"></a>
+				</section>				
+
+				<section>
+					<h2>layout 1 - normal flow</h2>
+					<h3>position: static;</h3>
+					<img width="400" src="assets/normalFlow.png">
+					<ul>
+						<li>each block-level element sits on top of the next one</li>
+						<li>it's the default</li>
+					</ul>
+				</section>				
+
+				<section>
+					<h2>layout 2 - relative positioning</h2>
+					<h3>position: relative;</h3>
+					<img width="400" src="assets/relativePositioning.png">
+					<ul>
+						<li>moves an element in relation to where it would have been in normal flow</li>
+						<li>top / bottom: 10px / 20%;</li>
+						<li>left / right: 10px / 20%;</li>
+					</ul>
+				</section>				
+
+				<section>
+					<h2>layout 3 - absolute positioning</h2>
+					<h3>position: absolute;</h3>
+					<img width="300" src="assets/absolutePositioning.png">
+					<ul>
+						<li>the box is taken out of normal flow and no longer affects the position of other elements on the page</li>
+						<li>top / bottom: 10px / 20%;</li>
+						<li>left / right: 10px / 20%;</li>
+					</ul>
+					<div class="codeRefCont">
+					<p class="codeRefText">absolutePositioning</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>				
+
+				<section>
+					<h2>layout 4 - fixed positioning</h2>
+					<h3>position: fixed;</h3>
+					<img width="300" src="assets/fixedPositioning.png">
+					<ul>
+						<li>It positions the element in relation to the browser window. Therefore, when a user scrolls down the page, it stays in the exact same place.</li>
+						<li>top / bottom: 10px / 20%;</li>
+						<li>left / right: 10px / 20%;</li>
+					</ul>
+				</section>				
+
+				<section>
+					<h2>z-index</h2>
+					<ul>
+						<li>When you use relative, fixed, or absolute positioning, boxes can overlap</li>
+						<li>if boxes do overlap, the elements that appear later in the HTML code sit on top of those that are earlier in the page</li>
+						<li>use z-index to control which element sits on top</li>
+					</ul>
+					<div class="codeRefCont">
+					<p class="codeRefText">fixedPositioning</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>				
+
+				<section>
+					<h2>layout 5 - float elements</h2>
+					<h3>float: right / left;</h3>
+					<img width="250" src="assets/floatingElements.png">
+					<ul>
+						<li>allows you place an element as far to the left or right of the containing element as possible</li>
+						<li>anything else inside the containing element will flow around it</li>
+						<li>you should also use the width property to indicate how wide the floated element should be</li>
+						<li><strong>ATTENTION</strong>:count your pixels/percentages!</li>
+					</ul>
+						<div class="codeRefCont">
+						<p class="codeRefText">sideBySide / sideBySideClear</p>
+						<img class="codeRefPic" src="assets/github_icon.png">
+				</section>				
+
+				<section>
+					<h2>variability of screens</h2>
+					<img width="700" src="assets/variousScreens.png"></a>
+				</section>
+
+				<section>
+					<h2>facebook dimensions</h2>
+					<img width="700" src="assets/facebook.png"></a>
+				</section>
+				
+				<section>
+					<h2>flickr dimentions</h2>
+					<img width="700" src="assets/flickr.png"></a>
+				</section>
+
+				<section>
+					<h2>two schools of design</h2>
+				</section>
+
+				<section>
+					<h2>fixed width</h2>
+					<p>designs do not change size as the user increases or decreases the size of their browser window</p>
+					<img width="700" src="assets/fixedWidth.png"></a>
+					<p>Measurements tend to be given in pixels</p>
+				</section>
+
+				<section>
+					<h2>fixed width</h2>
+					<ul>
+						<li>advantages</li>
+						<ul>
+							<li>accurate pixel values</li>
+							<li>greate control</li>
+							<li>images will always look the same</li>
+						</ul>
+						<br/>
+						<li>disadvantages</li>
+						<ul>
+							<li>You can end up with big gaps at edges</li>
+							<li>page can look small in hi-res screens</li>
+							<li>if user increase font size there might be overflow</li>
+							<li>design will take more vertical space than liquid layout</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>liquid layout</h2>
+					<p>stretches and contracts as the user changes the size of their browser window</p>
+					<img width="700" src="assets/liquidLayout.png"></a>
+					<p>they tend to use percentages</p>
+				</section>
+
+				<section>
+					<h2>liquid layout</h2>
+					<ul>
+						<li>advantages</li>
+						<ul>
+							<li>no space at edges when on a large screen</li>
+							<li>adjusts to small screens</li>
+							<li>immune to font size changes</li>
+						</ul>
+						<br/>
+						<li>disadvantages</li>
+						<ul>
+							<li>design can look very different from what intended</li>
+							<li>lines of text can become very long / very short</li>
+							<li>if user increases font size there might be overflow</li>
+							<li>problems with images can arise if not careful</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>tourOfSiliconValley</h2>
+					<h3><strong>fixed</strong> and <strong>liquid</strong> layout</h3>
+					<a href="assets/siliconValleyCSS.png">
+						<img width="700" src="assets/siliconValleyCSS.png"></a>
+				</section>				
+
 			</div>
 		</div>
+
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/head.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/js/reveal.min.js");></script>
