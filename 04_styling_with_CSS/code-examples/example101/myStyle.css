@@ -2,7 +2,7 @@ body {
 		 font-family: Courier;
 		 background-color: rgb(50,0,50);
 		 width: 600px;
-		 position:relative;
+		 position: relative;
 		 }
 h1 {
 		 color: rgb(255,0,0);
@@ -15,4 +15,5 @@ h2 {
 
 p {
 		 color: rgb(255,255,255);
+		 width: 500px;
 		 left: 20px;}
