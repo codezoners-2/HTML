@@ -1,0 +1,12 @@
+ body {
+	 background-color: grey;
+	 color: white;}
+ h1 {
+	 background-color: white;
+	 color: grey;}
+ p.zero {
+	 background-color: rgb(238,62,128);}
+ p.seven {
+	 background-color: rgb(0,187,136);}
+ p.fourteen {
+	 background-color: rgb(0,136,221);}
