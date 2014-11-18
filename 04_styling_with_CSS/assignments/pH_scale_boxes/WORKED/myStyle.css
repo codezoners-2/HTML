@@ -1,0 +1,25 @@
+ body {
+	 background-color: grey;
+	 color: white;
+	 padding: 20px;
+	 width: 50%;
+	 min-width: 300px;
+	 margin: 100px auto 50px auto;}
+ h1 {
+	 background-color: white;
+	 color: grey;
+	 padding: inherit;
+     border-style:solid;
+	 border-width: 10px;
+	 border-color: rgb(0,0,0);}
+ p {
+	 padding: 10px;
+	 margin: 10px;
+	 border-radius: 20px;
+	 margin-top: 10px;}
+ p.zero {
+	 background-color: rgb(238,62,128);}
+ p.seven {
+	 background-color: rgb(0,187,136);}
+ p.fourteen {
+	 background-color: rgb(0,136,221);}
