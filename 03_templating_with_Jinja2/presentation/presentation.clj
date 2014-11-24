@@ -358,7 +358,7 @@
                     [:li "The rows are alternately coloured with two different"
                      " shades of grey"]
 
-                    [:li "The perfect squares on the diagonal are in bold"]]]]
+                    [:li "The perfect squares on the diagonal are in bold against black"]]]]
 
                  [:section
                   [:section
