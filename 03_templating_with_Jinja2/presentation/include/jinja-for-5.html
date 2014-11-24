@@ -1,0 +1,5 @@
+<UL>
+  {% for i in range(1, 11) %}
+      <LI CLASS="{{ 'selected' if i == 5 else 'not-selected' }}">{{ i }}
+  {% endfor %}
+</UL>
