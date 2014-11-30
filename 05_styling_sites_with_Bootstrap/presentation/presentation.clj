@@ -151,10 +151,10 @@
                    (heading "Exercise 1")
                    (subheading "Make the template work!")
 
-                   [:p "Can you fix up the starter template to correct the appearance?"]
+                   [:p "Fix the starter template to correct the appearance"]
                    (image-h 360 "starter-broken.jpg")
-                   [:p "(Firefox (and Chrome) are your friends - look at the console output.)"]
-                   [:p "(...README...)"]]]
+                   [:p "(Firefox (and Chrome) are your friends - use the console.)"]
+                   [:p "See the " [:a {:href "https://github.com/codezoners-2/HTML/tree/master/05_styling_sites_with_Bootstrap/assignments/starter-template"} "README"] "."]]]
 
                  [:section
                   [:section
