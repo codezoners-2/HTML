@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+
+                <!-- THEME now expected in head.html.
+                     <link rel="stylesheet" href="css/theme/default.css" id="theme">
+                  -->
+
+                <!-- Meta-content (title, meta, style). -->
+                <title>Bootstrap</title><meta content="Bootstrap" name="description" /><meta content="Nick Rothwell" name="author" /><link href="css/theme/sky.css" rel="stylesheet" type="text/css" />
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+                <!-- Pull in main content. -->
+                <div class="reveal"><div class="slides"><section><h3>The Bootstrap Framework</h3><h4>Nick Rothwell</h4></section><section><h3>What is Bootstrap?</h3><p>Bootstrap is a front-end tool set for building web applications</p><p><i>Front-end</i> means running in the browser, not the server.)</p><img height="400" src="images/link_user_1_fb37d.jpg" style="margin:10px; vertical-align:middle" /></section><section><h3>Screen Shot</h3><img height="480" src="images/stance.jpg" style="margin:10px; vertical-align:middle" /><p>(Source: <a href="http://www.stance.com/"><code>http://www.stance.com/</code></a>)</p></section><section><h3>Modular Structure</h3><ul><li>Scaffolding (grid, ...)</li><li>CSS (styling)</li><li>Javascript (actions)</li><li>Components (icons, ...)</li></ul></section><section><h3>Bootstrap encapsulates design standards</h3><ul><li class="fragment">Grid layout</li><li class="fragment">Navigation bar</li><li class="fragment">Responsive (resizeable) design</li><li class="fragment">Reuseable controls (buttons, menus, ...)</li><li class="fragment">Active controls</li></ul></section><section><section><h3>Installation</h3><p>(1) Load from a CDN</p><pre><code class="html">&lt;!-- Latest compiled and minified CSS --&gt;
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"&gt;
+
+&lt;!-- Optional theme --&gt;
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"&gt;
+
+&lt;!-- Latest compiled and minified JavaScript --&gt;
+&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"&gt;&lt;/script&gt;</code></pre></section><section><h3>Installation</h3><p>(2) Download a precompiled copy</p><pre><code class="html">bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.min.css
+│   ├── bootstrap-theme.css
+│   └── bootstrap-theme.min.css
+├── js/
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+└── fonts/
+    ├── glyphicons-halflings-regular.eot
+    ├── glyphicons-halflings-regular.svg
+    ├── glyphicons-halflings-regular.ttf
+    └── glyphicons-halflings-regular.woff</code></pre></section></section><section><section><h3>Overview</h3></section><section><h3>Containers</h3><img height="480" src="images/starter-template.jpg" style="margin:10px; vertical-align:middle" /><a href="http://getbootstrap.com/examples/starter-template/"><code>http://getbootstrap.com/examples/starter-template/</code></a></section><section><h3>Navbars</h3><img height="480" src="images/navbar.jpg" style="margin:10px; vertical-align:middle" /><a href="http://getbootstrap.com/examples/navbar/"><code>http://getbootstrap.com/examples/navbar/</code></a></section><section><h3>Grids</h3><img height="480" src="images/grid.jpg" style="margin:10px; vertical-align:middle" /><a href="http://getbootstrap.com/examples/grid/"><code>http://getbootstrap.com/examples/grid/</code></a></section><section><h3>The Bootstrap Theme</h3><img height="480" src="images/theme.jpg" style="margin:10px; vertical-align:middle" /><a href="http://getbootstrap.com/examples/theme/"><code>http://getbootstrap.com/examples/theme/</code></a></section><section><h3>The Jumbotron</h3><img height="480" src="images/jumbotron.jpg" style="margin:10px; vertical-align:middle" /><a href="http://getbootstrap.com/examples/jumbotron/"><code>http://getbootstrap.com/examples/jumbotron/</code></a></section><section><h3>The Carousel</h3><img height="480" src="images/carousel.jpg" style="margin:10px; vertical-align:middle" /><a href="http://getbootstrap.com/examples/carousel/"><code>http://getbootstrap.com/examples/carousel/</code></a></section></section><section><section><h3>The Starter Template</h3><img height="480" src="images/starter-template.jpg" style="margin:10px; vertical-align:middle" /><a href="http://getbootstrap.com/examples/starter-template/"><code>http://getbootstrap.com/examples/starter-template/</code></a></section><section><h3>Starter Template: Head</h3><pre><code class="html">&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;meta name="description" content=""&gt;
+  &lt;meta name="author" content=""&gt;
+  &lt;link rel="icon" href="../../favicon.ico"&gt;
+
+  &lt;title&gt;Starter Template for Bootstrap&lt;/title&gt;
+
+  &lt;!-- Bootstrap core CSS --&gt;
+  &lt;link href="../../dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+
+  &lt;!-- Custom styles for this template --&gt;
+  &lt;link href="starter-template.css" rel="stylesheet"&gt;
+&lt;/head&gt;</code></pre><p>Note the relative paths (favicon, CSS).</p></section><section><h3>Starter Template: Navbar</h3><pre><code class="html">&lt;div class="navbar navbar-inverse navbar-fixed-top" role="navigation"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="navbar-header"&gt;
+      &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"&gt;
+        &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;a class="navbar-brand" href="#"&gt;Project name&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class="collapse navbar-collapse"&gt;
+      &lt;ul class="nav navbar-nav"&gt;
+        &lt;li class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+
+        &lt;li class="dropdown"&gt;
+          &lt;a class="dropdown-toggle" data-toggle="dropdown" href="#"&gt;Drop-down &lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
+
+          &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+
+        &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;&lt;!--/.nav-collapse --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></section><section><h3>Starter Template: Container</h3><pre><code class="html">&lt;div class="container"&gt;
+
+  &lt;div class="starter-template"&gt;
+    &lt;h1&gt;Bootstrap starter template&lt;/h1&gt;
+    &lt;p class="lead"&gt;Use this document as a way to quickly start any new project.&lt;br&gt; All you get is this text and a mostly barebones HTML document.&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- /.container --&gt;</code></pre></section><section><h3>Starter Template: Javascript</h3><pre><code class="html">&lt;!-- Bootstrap core JavaScript
+================================================== --&gt;
+&lt;!-- Placed at the end of the document so the pages load faster --&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="../../dist/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;!-- IE10 viewport hack for Surface/desktop Windows 8 bug --&gt;
+&lt;script src="../../assets/js/ie10-viewport-bug-workaround.js"&gt;&lt;/script&gt;</code></pre><p>Relative paths (again).</p></section></section><section><section><h3>The Navbar</h3><a href="http://getbootstrap.com/examples/navbar/"><code>http://getbootstrap.com/examples/navbar/</code></a><p>The Navbar is <i>responsive</i>.</p><p>(The document is modified with Javascript.)</p></section></section><section><section><h3>Containers</h3><a href="http://getbootstrap.com/css/#overview-container"><code>http://getbootstrap.com/css/#overview-container</code></a></section><section><h3>Containers (CSS)</h3><p>Place the entire content within a <code>container</code> element</p><pre><code class="html">&lt;div class="container"&gt;
+  ...
+&lt;/div&gt;</code></pre><p>The container supports Bootstrap's grid system</p></section></section><section><section><h3>Exercise 1</h3><h4>Make the template work!</h4><p>Can you fix up the starter template to correct the appearance?</p><img height="360" src="images/starter-broken.jpg" style="margin:10px; vertical-align:middle" /><p>(Firefox (and Chrome) are your friends - look at the console output.)</p><p>(...README...)</p></section></section><section><section><h3>The Grid System</h3><a href="http://getbootstrap.com/css/#grid"><code>http://getbootstrap.com/css/#grid</code></a></section><section><h3>Grid Rows and Columns</h3><pre><code class="html">&lt;div class="row"&gt;
+  &lt;div class="col-md-8"&gt;.col-md-8&lt;/div&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+  &lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+&lt;/div&gt;</code></pre></section><section><img height="300" src="images/simple-grid.png" style="margin:10px; vertical-align:middle" /><p>All rows are 12 columns wide</p><p>Rows will stack on smaller devices</p></section><section><h4>Control Stacking on Smaller Devices</h4><ul><li><span style="font-family:monospace; background-color:rgba(255, 255, 255, 0.5)">.col-lg-*</span> (large devices - desktops)</li><li><span style="font-family:monospace; background-color:rgba(255, 255, 255, 0.5)">.col-md-*</span> (medium devices - desktops)</li><li><span style="font-family:monospace; background-color:rgba(255, 255, 255, 0.5)">.col-sm-*</span> (small devices - tablets)</li><li><span style="font-family:monospace; background-color:rgba(255, 255, 255, 0.5)">.col-xs-*</span> (extra-small devices - phones)</li></ul></section><section><h3>Offsetting Columns</h3><pre><code class="html">&lt;div class="row"&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+  &lt;div class="col-md-4 col-md-offset-4"&gt;.col-md-4 .col-md-offset-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-md-3 col-md-offset-3"&gt;.col-md-3 .col-md-offset-3&lt;/div&gt;
+  &lt;div class="col-md-3 col-md-offset-3"&gt;.col-md-3 .col-md-offset-3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-md-6 col-md-offset-3"&gt;.col-md-6 .col-md-offset-3&lt;/div&gt;
+&lt;/div&gt;</code></pre></section><section><img height="300" src="images/grid-offsets.png" style="margin:10px; vertical-align:middle" /><p><span style="font-family:monospace; background-color:rgba(255, 255, 255, 0.5)">.col-md-offset-*</span> (or <span style="font-family:monospace; background-color:rgba(255, 255, 255, 0.5)">-lg-</span>, ...) moves columns to the right</p></section><section><h4>Fluid Container</h4><p>Use <span style="font-family:monospace; background-color:rgba(255, 255, 255, 0.5)">.container-fluid</span> for full-width containers</p><pre><code class="html">&lt;div class="container-fluid"&gt;
+  &lt;div class="row"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></section></section><section><section><h3>Exercise 2</h3><h4>Fun with the Grid</h4><p>Can you create these patterns using Bootstrap's Grid?</p></section><section><img height="480" src="images/grid-fun-1.png" style="margin:10px; vertical-align:middle" /></section><section><img height="480" src="images/grid-fun-2.png" style="margin:10px; vertical-align:middle" /></section><section><h4>Hints</h4><ul><li>The colour gradients are done with <span style="font-family:monospace; background-color:rgba(255, 255, 255, 0.5)">background: linear-gradient(#......, #......)</span></li><li>The rounded corners are <span style="font-family:monospace; background-color:rgba(255, 255, 255, 0.5)">border-radius: 0.5em</span></li><li>There's a margin, and a bit of padding, above and/or below the cells</li></ul></section></section><section><section><h3>Exercise 3 (Group Exercise!)</h3><h4>A Facebook Clone</h4><img height="480" src="images/codezonersbook.png" style="margin:10px; vertical-align:middle" /></section><section><h4>Bring Everything Together</h4><ul><li>Use the Starter Template</li><li>Build a navigation bar with drop-down menu</li><li>Lay out the content in three columns</li></ul></section><section><h4>Group Exercise!</h4><ul><li>Write a biog page each</li><li>Upload them to our tame server</li><li>Swap URLs for your pages</li><li>Create a drop-down menu containing a link to each page</li></ul></section></section></div></div>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
