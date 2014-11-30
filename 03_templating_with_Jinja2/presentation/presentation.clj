@@ -233,25 +233,146 @@
                     [:li "Can you modify your template to support these as well?"]
                     [:li "(Think about how the parameters might indicate 2 rather than 3 stripes)"]]
 
-                   [:p "(For the ambitious: try Mauritius!)"]]]]
+                   [:p "(For the ambitious: try Mauritius!)"]]]
 
+                 ;; Part II: Templates and Styling
+                 ;; Flags redux: jinja vars can be anywhere - even inside strings.
 
+                 [:section
+                  [:section
+                   (heading "Templating with Jinja2")
+                   (subheading "Part II: Loops and Styling")]]
 
+                 [:section
+                  [:section
+                   (heading "Yet More Jinja!")]
 
+                  [:section
+                   (heading "For-Loops")
 
+                   (include-code "jinja-for.html")
 
-         ;; Jinja vars can be anywhere - even inside strings.
+                   [:p "The " [:code "range(n1, n2)"] " function returns a sequence of numbers"
+                    " (including " [:code "n1"] ", excluding " [:code "n2"] ")."]]
 
-         ;; Simple conditional forms. Exercise: alter egos. Alternate styling.
+                  [:section
+                   (image "for-loop.png")]]
 
-         ;; Complex conditional forms. {% %} Simple password checking. (No sessions yet.)
+                 [:section
+                  [:section
+                   (heading "Templating the CSS")
 
-         ;; Exercise: flags (server)!
+                   [:p "We can change the CSS class of an element"
+                    " based on a conditional test:"]
 
-         ;; Exercise: some kind of age validation form?
+                   (include-code "for-5.css")
 
-         ;; For loops. Arithmetic. Extension: "loop" context. Alternate row colours?
-         ;; Exercise: 2D loop. range(start).
-         ;; Table.
+                   (include-code "jinja-for-5.html")]
 
-         )
+                  [:section
+                   (image "for-loop-5.png")]]
+
+                 [:section
+                  [:section
+                   (heading "Nested Loops")
+
+                   [:p "For-loops can be nested"]
+
+                   (include-code "for-nested.html")]
+
+                  [:section
+                   (image "for-nested.png")]]
+
+                 [:section
+                  [:section
+                   (heading "Exercise 5")
+                   (subheading "Times Tables")
+
+                   (image "times.png")]
+
+                  [:section
+                   (subheading "Hints")
+
+                   [:ul
+                    [:li "Rather than HTML tables, attempt this with " (tt (htmlize "<DIV>")) " and "
+                     (tt (htmlize "<SPAN>")) " elements"]
+
+                    [:li "If it helps: build a small (e.g. 3 x 3) table by hand first"]
+
+                    [:li "Don't worry about appearance (yet!)"]]]
+
+                  [:section
+                   (heading "Exercise 5a")
+                   (subheading "Add row and column headers")
+
+                   (image "times-headers.png")]]
+
+                 [:section
+                  [:section
+                   (heading "Uploading")
+
+                   [:ul
+                    [:li "Upload to " (tt "http://") [:i "address"] (tt ":8080/upload/")]
+                    [:li "HTML files and CSS files can be uploaded"]
+                    [:li "HTML files will appear with URLs like "
+                     (tt "http://") [:i "address"] (tt ":8080/page/") [:i "file"] (tt "/")]
+                    [:li "CSS files will appear with URLs like "
+                     (tt "http://") [:i "address"] (tt ":8080/page/css/") [:i "file"] (tt "/")]
+                    [:li "Please use unique filenames (containing your name!)"]]]]
+
+                 [:section
+                  [:section
+                   (heading "Special Loop Variables")
+
+                   [:p "There's a special variable called " (tt "loop")
+                    " which tracks loop iterations"]
+
+                   [:p (tt "loop.cycle") " cycles between values within a loop"]
+
+                   (include-code "loop-cycle.html")]
+
+                  [:section
+                   (image "loop-cycle.png")]
+
+                  ]
+
+                 [:section
+                  [:section
+                   (heading "Exercise 6")
+                   (subheading "Styled Multiplication Table")
+
+                   (image "styled-table.png")]
+
+                  [:section
+                   [:ul
+                    [:li "All the styling/colouring is in CSS"]
+
+                    [:li "Implement the table with " (tt (htmlize "<DIV>")) " and "
+                     (tt (htmlize "<SPAN>")) " rather than an HTML table"]
+
+                    [:li "The numbers are right-justified"]
+
+                    [:li "There is extra margin space separating the headers from the"
+                     " body of the table"]
+
+                    [:li "The rows are alternately coloured with two different"
+                     " shades of grey"]
+
+                    [:li "The perfect squares on the diagonal are in bold against black"]]]]
+
+                 [:section
+                  [:section
+                   (heading "Exercise 7")
+                   (subheading "Tables of Cubes")
+
+                   (image "cubed.png")]
+
+                  [:section
+                   (subheading "(At most) three tables per row")
+
+                   (image "cubed-wide.png")]
+
+                  [:section
+                   [:ul
+                    [:li "Each table has a full-width header bar and a narrow border"]
+                    [:li "Each perfect cube number is highlighted against black"]]]]])
