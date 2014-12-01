@@ -1,0 +1,12 @@
+<UL>
+  {% for u in db.walls %}
+  <LI>Wall for: {{ u }}
+
+    <UL>
+      {% for e in db.walls[u] %}
+      <LI>[From {{ e.from_user }}]: "{{ e.message }}"
+      {% endfor %}
+    </UL>
+
+  {% endfor %}
+</UL>

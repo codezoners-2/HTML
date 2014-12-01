@@ -246,4 +246,48 @@
                     [:li "Write a biog page each"]
                     [:li "Upload them to our tame server"]
                     [:li "Swap URLs for your pages"]
-                    [:li "Create a drop-down menu containing a link to each page"]]]]])
+                    [:li "Create a drop-down menu containing a link to each page"]]]]
+
+                 [:section
+                  [:section
+                   (heading "Exercise 4: The Social Network")
+
+                   (image "fb.jpg")]
+
+                  [:section
+                   (subheading "Users and Walls")
+
+                   [:ul
+                    [:li "There's a central database of users"]
+                    [:li "Every user has a " [:em "wall"] " of posts"]
+                    [:li "Each post has a user and some message text"]]
+
+                   [:p "Our web servers now support a message database!"]
+
+                   ]
+
+                  [:section
+                   (subheading "Posting messages")
+
+                   (include-code "wall_post.html")
+                   (image-h 240 "wall_post_form.png")]
+
+                  [:section
+                   (subheading "The Database is Public!")
+
+                   (image-h 360 "nsa.png")]
+
+                  [:section
+                   [:p "The Database is available to every page, in a variable called "
+                    (tt "db") "."]
+
+                   (include-code "nsa.html")]
+
+                  [:section
+                   (subheading "The Exercise:")
+                   (subheading "Add a Wall to your Page")
+
+                   [:ul
+                    [:li "Add a form, which allows anyone to post a message to your wall"]
+                    [:li "Add a panel which lists messages posted to you (with user and text)"]
+                    [:li "Use Bootstrap to style the content however you like!"]]]]])
